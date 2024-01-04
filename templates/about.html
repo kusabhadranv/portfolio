@@ -15,7 +15,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="./static/assets/logo.png">
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 
-    <title>About</title>
+    <title>Work Exp</title>
 
     <link href="./static/design.css" rel="stylesheet">
 </head>
@@ -38,10 +38,10 @@
 
                 <div class="collapse navbar-collapse" id="navbar-collapse">
                     <ul class="nav navbar-nav ">
-                        <li><a href="/" title="">01 : Home</a></li>
-                        <li><a href="./works.html" title="">02 : Works</a></li>
-                        <li><a href="./about.html" title="">03 : About me</a></li>
-                        <li><a href="./contact.html" title="">04 : Contact</a></li>
+                        <li><a href="/" title="">Home</a></li>
+                        <li><a href="./about.html" title="">Work Exp</a></li>
+                        <li><a href="./works.html" title="">Projects</a></li>                        
+                        <!-- <li><a href="./contact.html" title="">Contact</a></li> -->
                     </ul>
 
 
@@ -55,27 +55,55 @@
             <div class="row">
                 <div class="col-xs-12">
                     <div class="section-container-spacer text-center">
-                        <h1 class="h2">01 : About me</h1>
+                        <h1 class="h2">Work Experience</h1>                       
                     </div>
+                    <div class="section-container-spacer text-center">                        
+                        <a href="{{ url_for('download_docx') }}" target="_blank" title="" class="btn btn-default" download="Vaisakh_resume.docx">Download Resume.docx</a>                        
+                        <a href="{{ url_for('download_pdf') }}" target="_blank" title="" class="btn btn-default" download="Vaisakh_resume.pdf">Download Resume.pdf</a>                        
+                    </div>
+                    
 
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1">
                             <div class="row">
-                                <div class="col-xs-12 col-md-6">
-                                    <h3>CODE BREAKERS</h3>
-                                    <p>we have a youtube channel named as <a href="https://youtube.com/codebreakerstech" target="_blank">CODE BREAKERS</a> for learning purpose and to give information about freebies and new technical related things</p>
-                                    <h3>WHY CODING?</h3>
-                                    <p>coding is the future, it is a must thing in future so take your time and learn it well to perform well in any field.
-                                        <h3>Subscribe us on youtube</h3>
-                                        <p>This very fact that computers are good at things that humans are not is why you need to become skilled at talking “computer language”. Once you learn this new language, you can delegate mundane tasks to your partner
-                                            (the computer), leaving more time for you to do the things that you are uniquely suited for. You bring creativity, intuition, and inventiveness to this partnership.
-                                        </p>
-                                </div>
-                                <div class="col-xs-12 col-md-6">
-                                    <a href="https://youtube.com/codebreakerstech" target="_blank"><img src="./static/assets/images/profil.jpg" class="img-responsive" alt=""></a>
-
-                                    <a href="https://youtube.com/codebreakerstech" target="_blank"><img src="./static/assets/images/python.png" class="img-responsive" alt=""></a>
-                                </div>
+                                <div class="col-xs-12 col-md-12">
+                                    <h3>Flipt LLC, NJ, USA<span style="float: right;">Apr 2022 - Dec 2023</span></h3>
+                                    <ul>
+                                        <li>Developed Flask based REST API components that adjudicates claims for pharmacy benefit management by
+                                            pre-processing the requests (parsing, validating in Pydantic and acknowledging through RabbitMQ) in Python,
+                                            and reviewing based on patient information extracted from Couchbase DB and Amazon Redshift.</li>
+                                        <li>Created Apache Airflow pipelines that process around 50K records of PHI data daily by extracting from SFTP
+                                            transferred files, transforming using Python, NoSQL scripts and loading into AWS S3 through DAGs.</li>
+                                        <li>Implemented asynchronous modules in Python for optimizing database calls and http requests along with
+                                            pagination in data upserts which reduced the service response time by 27% and improved CPU usage by 14%.</li>
+                                        <li>Worked on Python packages including PyCryptodome for PHI data encryption, Pandas, numpy for efficient
+                                            claim accumulation calculations, Pytest for incorporating unit tests and monitoring tools Datadog and Splunk.</li>
+                                    </ul>
+                                    <h3>Alpine Electronics, CA, USA<span style="float: right;">Feb 2022 - Apr 2022</span></h3>
+                                    <ul>
+                                        <li>Implemented advanced image processing techniques in OpenCV and Mediapipe to preprocess input data,
+                                            resulting in improved feature extraction and reduced noise in tracking boosting the model accuracy by 9%.</li>
+                                        <li>Automated the process of integrating pre-processed images into a RestNet model fine-tuning workflow from
+                                            AWS S3 bucket, leading to a 12% reduction in model training time without compromising model accuracy.</li>
+                                        <li>Diversified training data by applying data augmentation techniques like random rotation, translations and flips
+                                            thereby improving the model’s ability to generalize unseen gaze patterns and environmental conditions.</li>                                        
+                                    </ul>
+                                    <h3>Iqvia, BLR, IND<span style="float: right;">Feb 2019 - Aug 2019</span></h3>
+                                    <ul>
+                                        <li>Employed Python scripts coupled with SQL queries to efficiently transform medical sales data stored in MySQL
+                                            DB into delimited file formats causing a 40% reduction in time required for generating client specific reports.</li>
+                                        <li>Collaboratedwiththecodemigrationteamto developPythonscriptsthatinterfacewithMySQLDBtoreplace
+                                            DB2 loads by Mainframe JCL procedures which improved scalability and increased data loading speed by 25%.</li>
+                                        <li>Engaged in all SDLC phases of drug sales reporting project including design, development and implementation.</li>
+                                        <li>Collaborated with DevOps teams to establish continuous integration pipelines, automating testing, deployment,
+                                            and monitoring processes for the SaaS application.</li>
+                                    </ul>
+                                    <h3>Wipro, BLR, IND<span style="float: right;">Jun 2015 - Feb 2019</span></h3>
+                                    <ul>
+                                        <li>Revamped daily health check activities including server readiness assessment, quote creation, critical job failure alert reports and ticket assignments by creating Python modules which saved 1 hour per day for the team.</li>
+                                        <li>Achieved 40% increase in data retrieval speed by optimizing DB2 queries using JCL, COBOL, DB2 and Rexx which led to reduction in daily and monthly batch processing duration by 40% and 30% respectively.</li>                                        
+                                    </ul>
+                                </div>                                
                             </div>
                         </div>
                     </div>
@@ -85,18 +113,6 @@
             </div>
         </div>
     </div>
-
-
-    <footer class="footer-container text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <p>© CODE BREAKERS | Website created by <a href="https://youtube.com/codebreakerstech" target="_blank" title="Create website with free html template">code breakers</a>/<a href="https://youtube.com/codebreakerstech" target="_blank" title="Beautiful Free Images">code breakers</a></p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
     <script>
         document.addEventListener("DOMContentLoaded", function(event) {
             navActivePage();

@@ -1,4 +1,4 @@
-from flask import Flask, render_template,url_for,redirect,request
+from flask import Flask, render_template,url_for,redirect,request, send_file
 import csv
 app = Flask(__name__)
 
@@ -30,6 +30,16 @@ def page(page_name='/'):
         return render_template(page_name)
     except:
         return redirect('/')
+    
+@app.route('/download_pdf')
+def download_pdf():
+    pdf_path = 'static/downloads/VaisakhK_Resume.pdf'
+    return send_file(pdf_path, as_attachment=True)
+
+@app.route('/download_docx')
+def download_docx():
+    pdf_path = 'static/downloads/VaisakhK_Resume.docx'
+    return send_file(pdf_path, as_attachment=True)
 
 
 
@@ -42,4 +52,4 @@ def write_data_csv(data):
         db_writer.writerow([email,subject,message])
 
 if __name__ == '__main__':  
-   app.run()
+   app.run(debug=True) 
