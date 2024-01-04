@@ -52,4 +52,4 @@ def write_data_csv(data):
         db_writer.writerow([email,subject,message])
 
 if __name__ == '__main__':  
-   app.run(debug=True) 
+   app.run() 
