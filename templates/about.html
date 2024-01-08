@@ -57,8 +57,8 @@
                         <h1 class="h2">Work Experience</h1>                       
                     </div>
                     <div class="section-container-spacer text-center">                        
-                        <a href="{{ url_for('download_docx') }}" target="_blank" title="" class="btn btn-default" download="Vaisakh_resume.docx">Download Resume.docx</a>                        
-                        <a href="{{ url_for('download_pdf') }}" target="_blank" title="" class="btn btn-default" download="Vaisakh_resume.pdf">Download Resume.pdf</a>                        
+                        <a href="{{ url_for('download_docx') }}" target="_blank" title="" class="btn btn-default" download="Vaisakh_Kusabhadran.docx">Download Resume.docx</a>                        
+                        <a href="{{ url_for('download_pdf') }}" target="_blank" title="" class="btn btn-default" download="Vaisakh_Kusabhadran.pdf">Download Resume.pdf</a>                        
                     </div>
                     
 
@@ -66,41 +66,36 @@
                         <div class="col-md-10 col-md-offset-1">
                             <div class="row">
                                 <div class="col-xs-12 col-md-12">
-                                    <h3>Flipt LLC, NJ, USA<span style="float: right;">Apr 2022 - Dec 2023</span></h3>
+                                    <h3>Flipt, NJ, USA(Software Engineer)<span style="float: right;">Apr 2022 - Dec 2023</span></h3>
+                                    <p>Backend developer responsible for development and maintenance of claim adjudication and pharmacy benefit management systems.</p>
                                     <ul>
-                                        <li>Developed Flask based REST API components that adjudicates claims for pharmacy benefit management by
-                                            pre-processing the requests (parsing, validating in Pydantic and acknowledging through RabbitMQ) in Python,
-                                            and reviewing based on patient information extracted from Couchbase DB and Amazon Redshift.</li>
-                                        <li>Created Apache Airflow pipelines that process around 50K records of PHI data daily by extracting from SFTP
-                                            transferred files, transforming using Python, NoSQL scripts and loading into AWS S3 through DAGs.</li>
-                                        <li>Implemented asynchronous modules in Python for optimizing database calls and http requests along with
-                                            pagination in data upserts which reduced the service response time by 27% and improved CPU usage by 14%.</li>
-                                        <li>Worked on Python packages including PyCryptodome for PHI data encryption, Pandas, numpy for efficient
-                                            claim accumulation calculations, Pytest for incorporating unit tests and monitoring tools Datadog and Splunk.</li>
+                                        <li>Developed <b>REST</b> endpoints in <b>Flask</b> that handles ~2K requests for automated treatment authorization using Python and RabbitMQ <b>reducing manual intervention from 2 hours to 10 minutes</b>.</li>
+                                        <li>Implemented asynchronous modules in <b>Python</b> for optimizing database calls and http requests which <b>reduced service response time by 27% and improved CPU usage by 14%</b>.</li>
+                                        <li><b>Improved average claim settlement time duration by 30%</b> through substitution of SQL joins with Pandas for data comparison and the utilization of NumPy for payment calculations.</li>
+                                        <li>Collaborated with DevOps teams to establish CI/CD pipelines, containerization and orchestration strategies using <b>Docker and Kubernetes, accelerating release cadence from monthly to biweekly</b>.</li>
+                                        <li>Substituted Python scripts with ETL pipeline to load insurance coverage data from NoSQL database (Couchbase) to AWS S3 and Redshift, <b>eliminating the need for manual intervention entirely</b>.</li>
                                     </ul>
-                                    <h3>Alpine Electronics, CA, USA<span style="float: right;">Feb 2022 - Apr 2022</span></h3>
+                                    <h3>Alpine Electronics, CA, USA(ML Engineer)<span style="float: right;">Feb 2022 - Apr 2022</span></h3>
+                                    <p>Member of machine learning team responsible for improving the model's ability to generalize unseen gaze patterns and environmental conditions.</p>
                                     <ul>
-                                        <li>Implemented advanced image processing techniques in OpenCV and Mediapipe to preprocess input data,
-                                            resulting in improved feature extraction and reduced noise in tracking boosting the model accuracy by 9%.</li>
+                                        <li>Enhanced feature extraction using multiple image processing techniques in <b>OpenCV</b> like histogram equalization and image segmentation, <b>boosting the model accuracy by 9%</b>.</li>
                                         <li>Automated the process of integrating pre-processed images into a RestNet model fine-tuning workflow from
-                                            AWS S3 bucket, leading to a 12% reduction in model training time without compromising model accuracy.</li>
+                                            AWS S3 bucket, <b>leading to a 12% reduction in model training time</b>.</li>
                                         <li>Diversified training data by applying data augmentation techniques like random rotation, translations and flips
                                             thereby improving the model’s ability to generalize unseen gaze patterns and environmental conditions.</li>                                        
                                     </ul>
-                                    <h3>Iqvia, BLR, IND<span style="float: right;">Feb 2019 - Aug 2019</span></h3>
+                                    <h3>Iqvia, BLR, IND(Sr.Software Engineer)<span style="float: right;">Feb 2019 - Aug 2019</span></h3>
+                                    <p>Contributor to the system migration team involved in transitioning legacy Mainframe code to Python scripts.</p>
                                     <ul>
-                                        <li>Employed Python scripts coupled with SQL queries to efficiently transform medical sales data stored in MySQL
-                                            DB into delimited file formats causing a 40% reduction in time required for generating client specific reports.</li>
-                                        <li>Collaboratedwiththecodemigrationteamto developPythonscriptsthatinterfacewithMySQLDBtoreplace
-                                            DB2 loads by Mainframe JCL procedures which improved scalability and increased data loading speed by 25%.</li>
-                                        <li>Engaged in all SDLC phases of drug sales reporting project including design, development and implementation.</li>
-                                        <li>Collaborated with DevOps teams to establish continuous integration pipelines, automating testing, deployment,
-                                            and monitoring processes for the SaaS application.</li>
+                                        <li>Transformed medical sales data in MySQL DB to delimited files by incorporating SQL queries into Python scripts, resulting in a <b>40% reduction in client specific report generation time.</b></li>                                                                               
+                                        <li>Migrated JCL procedures to Python MySQL DB scripts which <b>increased data loading speed by 25%</b>.</li>
+                                        <li>Engaged in all SDLC phases of drug sales reporting project following <b>Agile methodologes</b> including backlog grooming, sprint planning, daily stand-ups, sprint retrospective, etc .</li>
                                     </ul>
-                                    <h3>Wipro, BLR, IND<span style="float: right;">Jun 2015 - Feb 2019</span></h3>
+                                    <h3>Wipro, BLR, IND(Software Engineer)<span style="float: right;">Jun 2015 - Feb 2019</span></h3>
+                                    <p>Built Mainframe/Python applications for client engagement teams within the life insurance industry.</p>
                                     <ul>
-                                        <li>Revamped daily health check activities including server readiness assessment, quote creation, critical job failure alert reports and ticket assignments by creating Python modules which saved 1 hour per day for the team.</li>
-                                        <li>Achieved 40% increase in data retrieval speed by optimizing DB2 queries using JCL, COBOL, DB2 and Rexx which led to reduction in daily and monthly batch processing duration by 40% and 30% respectively.</li>                                        
+                                        <li>Revamped daily health check activities including server readiness assessment, quote creation, critical job failure alert reports and ticket assignments by creating Python modules which <b>saved 1 hour per day for the team</b>.</li>
+                                        <li>Achieved 40% increase in data retrieval speed by optimizing DB2 queries using JCL, COBOL, DB2 and Rexx which led to <b>reduction in daily and monthly batch processing duration by 40% and 30%</b> respectively.</li>                                        
                                     </ul>
                                 </div>                                
                             </div>
