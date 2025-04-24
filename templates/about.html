@@ -57,8 +57,8 @@
                         <h1 class="h2">Work Experience</h1>                       
                     </div>
                     <div class="section-container-spacer text-center">                        
-                        <a href="{{ url_for('download_docx') }}" target="_blank" title="" class="btn btn-default" download="Vaisakh_Kusabhadran.docx">Download Resume.docx</a>                        
-                        <a href="{{ url_for('download_pdf') }}" target="_blank" title="" class="btn btn-default" download="Vaisakh_Kusabhadran.pdf">Download Resume.pdf</a>                        
+                        <a href="{{ url_for('download_docx') }}" target="_blank" title="" class="btn btn-default" download="Vaisakh_Kusabhadran_DE.docx">Download Resume.docx</a>                        
+                        <a href="{{ url_for('download_pdf') }}" target="_blank" title="" class="btn btn-default" download="Vaisakh_Kusabhadran_DE.pdf">Download Resume.pdf</a>                        
                     </div>
                     
 
@@ -66,12 +66,20 @@
                         <div class="col-md-10 col-md-offset-1">
                             <div class="row">
                                 <div class="col-xs-12 col-md-12">
-                                    <h3>Flipt, NJ, USA(Software Engineer)<span style="float: right;">Apr 2022 - Dec 2023</span></h3>
+                                    <h3>Clover Networks, CA, USA(Data Engineer)<span style="float: right;">Feb 2024 - Present</span></h3>
+                                    <p>Data engineer responsible for migrating existing legacy data pipelines to new frameworks.</p>
+                                    <ul>
+                                        <li>Built scalable <b>data pipelines</b> using <b>Python</b> to ingest and transform high-volume merchant data into a centralized data warehouse, enabling faster analytics.</li>
+                                        <li>Developed a <b>Java Spring Boot</b> application for automating lifecycle management of data pipelines reducing the average time spent on pipeline maintenance from <b>20 minutes to 8 minutes</b>.</li>
+                                        <li>Improved stability of <b>Kafka pipelines</b> by addressing critical technical debt in sink connectors failure handling, resulting in a <b>60% reduction in pipeline restarts</b> and smoother production operations.</li>
+                                        <li>Designed and migrated legacy ETL workflows to GCP-native services using <b>Airflow, Python, MySQL and Snowflake</b> improving data availability and <b>reducing downtime by 60%</b>.</li>                                        
+                                    </ul>
+                                    <h3>Flipt, NJ, USA(Data Engineer)<span style="float: right;">Apr 2022 - Dec 2023</span></h3>
                                     <p>Backend developer responsible for development and maintenance of claim adjudication and pharmacy benefit management systems.</p>
                                     <ul>
                                         <li>Developed <b>REST</b> endpoints in <b>Flask</b> that handles ~2K requests for automated treatment authorization using Python and RabbitMQ <b>reducing manual intervention from 2 hours to 10 minutes</b>.</li>
                                         <li>Implemented asynchronous modules in <b>Python</b> for optimizing database calls and http requests which <b>reduced service response time by 27% and improved CPU usage by 14%</b>.</li>
-                                        <li><b>Improved average claim settlement time duration by 30%</b> through substitution of SQL joins with Pandas for data comparison and the utilization of NumPy for payment calculations.</li>
+                                        <li>Engineered fault-tolerant data pipelines using <b>Python, NoSQL and Airflow</b> to process over 50K daily PHI records from SFTP to AWS S3, enhancing compliance and data integrity.</li>
                                         <li>Collaborated with DevOps teams to establish CI/CD pipelines, containerization and orchestration strategies using <b>Docker and Kubernetes, accelerating release cadence from monthly to biweekly</b>.</li>
                                         <li>Substituted Python scripts with ETL pipeline to load insurance coverage data from NoSQL database (Couchbase) to AWS S3 and Redshift, <b>eliminating the need for manual intervention entirely</b>.</li>
                                     </ul>
