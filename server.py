@@ -33,12 +33,12 @@ def page(page_name='/'):
     
 @app.route('/download_pdf')
 def download_pdf():
-    pdf_path = 'static/downloads/Vaisakh_Kusabhadran.pdf'
+    pdf_path = 'static/downloads/Vaisakh_Kusabhadran_DE.pdf'
     return send_file(pdf_path, as_attachment=True)
 
 @app.route('/download_docx')
 def download_docx():
-    pdf_path = 'static/downloads/Vaisakh_Kusabhadran.docx'
+    pdf_path = 'static/downloads/Vaisakh_Kusabhadran_DE.docx'
     return send_file(pdf_path, as_attachment=True)
 
 
